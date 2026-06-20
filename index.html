@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Dice Roller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app-shell">
+        <center><p class="eyebrow">Dice Game</p>
+        <h1 id="heading">🎲  Dice Roller</h1>
+        <p id="headingpara" style="color: white;">Choose one die or two dice, roll, and keep track of every result.</p>
+        <p class="credit">Created by Ravi</p></center>
+
+        <center><button class="btns" id="btn1" type="button">1</button>
+        <button class="btns" id="btn2" type="button">2</button>
+
+        <div id="diceResult" class="dice-container" aria-live="polite"></div>
+        <p id="rollSummary" class="roll-summary"></p>
+        <button id="btn" type="button">Roll Dice</button></center>
+
+        <section class="panel history-panel">   
+            <div class="history-header">
+                <h2>History</h2>
+                <button id="clear" type="button">Clear</button>
+            </div>
+            <div id="diceHistory" class="history-list" aria-live="polite"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
